@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('./files/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.hero::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.324);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.keys {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    z-index: 1;
+
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+.key {
+    color: white;
+    padding: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    border: 5px solid black;
+    transition: all 0.07s;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.key[data-key="65"] span {
+    color: #c1a08e;
+
+}
+
+.key[data-key="83"] span {
+    color: #6ae2ff;
+
+}
+
+.key[data-key="68"] span {
+    color: #58bae8;
+
+}
+
+.key[data-key="70"] span {
+    color: #eba39d;
+
+}
+
+.key[data-key="71"] span {
+    color: #eb72bf;
+
+}
+
+.key[data-key="72"] span {
+    color: #fecc3c;
+
+}
+
+.key[data-key="74"] span {
+    color: #e1ce66;
+
+}
+
+.key[data-key="75"] span {
+    color: #c33239;
+
+}
+
+.key[data-key="76"] span {
+    color: #fdfcfb;
+
+}
+
+.playing {
+    transform: scale(1.1);
+}
+
+.playing65 {
+    border-color: #c1a08e;
+    box-shadow: 0 0 15px #c1a08e;
+}
+
+.playing83 {
+    border-color: #6ae2ff;
+    box-shadow: 0 0 15px #6ae2ff;
+}
+
+.playing68 {
+    border-color: #58bae8;
+    box-shadow: 0 0 15px #58bae8;
+}
+
+.playing70 {
+    border-color: #eba39d;
+    box-shadow: 0 0 15px #eba39d;
+}
+
+.playing71 {
+    border-color: #eb72bf;
+    box-shadow: 0 0 15px #eb72bf;
+}
+
+.playing72 {
+    border-color: #fecc3c;
+    box-shadow: 0 0 15px #fecc3c;
+}
+
+.playing74 {
+    border-color: #e1ce66;
+    box-shadow: 0 0 15px #e1ce66;
+}
+
+.playing75 {
+    border-color: #c33239;
+    box-shadow: 0 0 15px #c33239;
+}
+
+.playing76 {
+    border-color: #fdfcfb;
+    box-shadow: 0 0 15px #fdfcfb;
+}
+
+.key span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.key span::selection {
+    background-color: transparent;
+}
